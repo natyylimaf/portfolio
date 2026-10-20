@@ -1,0 +1,11 @@
+/* ===== Variáveis ===== */
+:root {
+    --cor-fundo: #0a0a0f;
+    --cor-primaria: #7c3aed;
+    --cor-primaria-escura: #5b21b6;
+    --cor-destaque: #a78bfa;
+    --cor-texto: #e5e1f5;
+    --cor-texto-suave: #a39fb8;
+    --cor-borda: #2a2440;
+    --fonte-codigo: "Fira Code", monospace;
+}
