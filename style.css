@@ -192,3 +192,27 @@ ul li:hover {
     border-color: var(--cor-primaria);
     transform: translateY(-2px);
 }
+
+
+/* ===== Logos nas listas ===== */
+ul li::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* tecnologias (primeira lista) */
+ul:first-of-type li:nth-child(1)::before { background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"); }
+ul:first-of-type li:nth-child(2)::before { background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"); }
+ul:first-of-type li:nth-child(3)::before { background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"); }
+ul:first-of-type li:nth-child(4)::before { background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"); }
+ul:first-of-type li:nth-child(5)::before { background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"); }
+ul:first-of-type li:nth-child(6)::before { background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"); }
+ul:first-of-type li:nth-child(7)::before { background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"); }
+
+/* ferramentas (segunda lista) */
+ul:last-of-type li:nth-child(1)::before { background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"); }
+ul:last-of-type li:nth-child(2)::before { background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"); }
