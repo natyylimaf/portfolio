@@ -1,4 +1,4 @@
-/* ===== Variáveis ===== */
+/* ===== Variáveis de cores e fonte ===== */
 :root {
     --cor-fundo: #0a0a0f;
     --cor-primaria: #7c3aed;
@@ -8,4 +8,24 @@
     --cor-texto-suave: #a39fb8;
     --cor-borda: #2a2440;
     --fonte-codigo: "Fira Code", monospace;
+}
+
+
+/* === Reset básico para remover as configurações de estilo padrão === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-codigo);
+    font-size: 15px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.8;
 }
