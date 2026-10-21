@@ -216,3 +216,38 @@ ul:first-of-type li:nth-child(7)::before { background-image: url("https://cdn.js
 /* ferramentas (segunda lista) */
 ul:last-of-type li:nth-child(1)::before { background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"); }
 ul:last-of-type li:nth-child(2)::before { background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"); }
+
+
+/* ===== Logos da formação ===== */
+#formacao h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#formacao h3::before {
+    content: "";
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+}
+
+/* logo CEET Vasco Coutinho */
+#formacao h3:nth-of-type(1)::before,
+#formacao h3:nth-of-type(2)::before {
+    background-image: url("img/ceet.png");
+}
+
+/* logo FAESA */
+#formacao h3:nth-of-type(3)::before {
+    background-image: url("img/faesa.png");
+}
+
+#formacao p {
+    margin-left: 56px;
+}
