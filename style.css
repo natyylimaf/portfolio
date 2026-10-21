@@ -92,3 +92,33 @@ header img {
     box-shadow: 0 0 25px rgba(167, 139, 250, 0.6);
     margin-bottom: 25px;
 }
+
+
+/* ===== Menu de navegação ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(10, 10, 15, 0.25);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav a::before {
+    content: "./";
+    opacity: 0.7;
+}
+
+nav a:hover {
+    background-color: #0a0a0f;
+    color: var(--cor-destaque);
+    border-color: #0a0a0f;
+}
