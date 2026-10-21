@@ -164,3 +164,31 @@ section p {
     margin-bottom: 10px;
     color: var(--cor-texto-suave);
 }
+
+
+/* ===== Listas (tecnologias e ferramentas) ===== */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #0a0a0f;
+    color: var(--cor-destaque);
+    border: 1px solid var(--cor-borda);
+    padding: 5px 14px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+ul li:hover {
+    border-color: var(--cor-primaria);
+    transform: translateY(-2px);
+}
