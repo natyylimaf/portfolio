@@ -277,3 +277,18 @@ ul:last-of-type li:nth-child(2)::before { background-image: url("https://cdn.jsd
     background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg") center / contain no-repeat;
     filter: invert(1);
 }
+
+
+/* ===== Rodapé ===== */
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    color: var(--cor-texto-suave);
+    font-size: 0.85rem;
+    border-top: 1px dashed var(--cor-borda);
+}
+
+footer p::before {
+    content: "</> ";
+    color: var(--cor-primaria);
+}
