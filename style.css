@@ -251,3 +251,29 @@ ul:last-of-type li:nth-child(2)::before { background-image: url("https://cdn.jsd
 #formacao p {
     margin-left: 56px;
 }
+
+
+/* ===== Logo do GitHub no contato ===== */
+#contato p {
+    font-size: 0;
+}
+
+#contato a {
+    display: inline-block;
+    font-size: 0;
+    border-bottom: none;
+    transition: transform 0.2s;
+}
+
+#contato a:hover {
+    transform: scale(1.15);
+}
+
+#contato a::before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg") center / contain no-repeat;
+    filter: invert(1);
+}
