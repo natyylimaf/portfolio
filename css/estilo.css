@@ -130,6 +130,12 @@ nav a:hover {
     border-color: #0a0a0f;
 }
 
+/* destaca os links durante a navegação pelo teclado, melhorando a acessibilidade */
+a:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
 
 /* ===== Conteúdo principal ===== */
 main {
