@@ -310,3 +310,14 @@ footer p::before {
     content: "</> ";
     color: var(--cor-primaria);
 }
+
+
+/* ===== Ajustes responsivos para dispositivos móveis ===== */
+@media (max-width: 600px) {
+    header { padding: 60px 15px 15px; }
+    header h1 { font-size: 1.4rem; }
+    header img { width: 140px; height: 140px; }
+    nav { gap: 6px; padding: 10px; }
+    nav a { padding: 6px 10px; }
+    #formacao p { margin-left: 0; }
+}
