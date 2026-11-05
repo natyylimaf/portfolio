@@ -83,6 +83,11 @@ header p {
     color: #ede9fe;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 header img {
     width: 180px;
     height: 180px;
