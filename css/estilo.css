@@ -7,6 +7,7 @@
     --cor-texto: #e5e1f5;
     --cor-texto-suave: #a39fb8;
     --cor-borda: #2a2440;
+    --gradiente-principal: linear-gradient(135deg, var(--cor-primaria), var(--cor-primaria-escura));
     --fonte-codigo: "Fira Code", monospace;
 }
 
@@ -34,7 +35,7 @@ body {
 /* ===== Cabeçalho no estilo janela de terminal  ===== */
 header {
     position: relative;
-    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-primaria-escura));
+    background: var(--gradiente-principal);
     background-attachment: fixed;
     color: #fff;
     text-align: center;
@@ -109,7 +110,7 @@ nav {
     flex-wrap: wrap;
     gap: 10px;
     padding: 12px 20px;
-    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-primaria-escura));
+    background: var(--gradiente-principal);
     background-attachment: fixed;
     border-bottom: 2px solid var(--cor-destaque);
 }
