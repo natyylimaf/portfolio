@@ -320,5 +320,6 @@ footer p::before {
     header img { width: 140px; height: 140px; }
     nav { gap: 6px; padding: 10px; }
     nav a { padding: 6px 10px; }
+    section { scroll-margin-top: 200px; }
     #formacao p { margin-left: 0; }
 }
