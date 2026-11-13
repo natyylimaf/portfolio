@@ -136,6 +136,13 @@ nav a:hover {
     border-color: #0a0a0f;
 }
 
+/* link da seção atual (classe "ativo" adicionada pelo JavaScript) */
+nav a.ativo {
+    background-color: #0a0a0f;
+    color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+}
+
 /* destaca os links durante a navegação pelo teclado, melhorando a acessibilidade */
 a:focus-visible {
     outline: 3px solid #fff;
