@@ -324,3 +324,36 @@ footer p::before {
     section { scroll-margin-top: 200px; }
     #formacao p { margin-left: 0; }
 }
+
+
+/* ===== Botão de voltar ao topo ===== */
+#botao-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 50%;
+    background: var(--gradiente-principal);
+    color: #fff;
+    font-family: var(--fonte-codigo);
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none; /* começa escondido */
+}
+
+#botao-topo:hover {
+    background: #0a0a0f;
+    color: var(--cor-destaque);
+}
+
+#botao-topo:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+#botao-topo.visivel {
+    display: block;
+}
