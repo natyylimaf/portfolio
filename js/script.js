@@ -63,3 +63,45 @@ function marcarSecaoAtual() {
 // atualiza ao rolar e também uma vez ao carregar a página
 window.addEventListener("scroll", marcarSecaoAtual, { passive: true });
 marcarSecaoAtual();
+
+
+
+// ===== Título digitando =====
+// pega o título e guarda o texto completo
+const titulo = document.querySelector("header h1");
+const textoCompleto = titulo.textContent.trim();
+
+// quem pediu menos animações no sistema vê o título normal, sem efeito
+const menosMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (!menosMovimento) {
+    // um span para o que já foi digitado e outro para o que falta
+    const digitado = document.createElement("span");
+    digitado.className = "digitado";
+    digitado.setAttribute("aria-hidden", "true");
+
+    const restante = document.createElement("span");
+    restante.className = "restante";
+    restante.setAttribute("aria-hidden", "true");
+    restante.textContent = textoCompleto;
+
+    // leitores de tela leem o texto completo de uma vez, e não letra por letra
+    titulo.setAttribute("aria-label", textoCompleto);
+    titulo.classList.add("digitando");
+    titulo.textContent = "";
+    titulo.append(digitado, restante);
+
+    let posicao = 0;
+
+    // a cada 60ms passa uma letra do "restante" para o "digitado"
+    const intervalo = setInterval(function () {
+        posicao++;
+        digitado.textContent = textoCompleto.slice(0, posicao);
+        restante.textContent = textoCompleto.slice(posicao);
+
+        // quando acabou o texto, para o relógio
+        if (posicao >= textoCompleto.length) {
+            clearInterval(intervalo);
+        }
+    }, 60);
+}

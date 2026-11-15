@@ -78,6 +78,20 @@ header h1::after {
     50% { opacity: 0; }
 }
 
+.restante {
+    color: transparent;
+}
+
+header h1.digitando::after {
+    content: none;
+}
+
+.digitado::after {
+    content: "_";
+    margin-left: 4px;
+    animation: piscar 1s steps(1) infinite;
+}
+
 header p {
     max-width: 650px;
     margin: 0 auto 25px;
