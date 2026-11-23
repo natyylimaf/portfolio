@@ -377,3 +377,45 @@ footer p::before {
 #botao-topo.visivel {
     display: block;
 }
+
+
+/* ===== Tecnologias e links dos projetos ===== */
+.projeto-tecnologias {
+    margin-top: 8px;
+}
+
+.projeto-tecnologias li {
+    font-size: 0.8rem;
+    padding: 2px 10px;
+}
+
+/* esconde o quadrado de logo, que só vale para as listas de Conhecimentos */
+.projeto-tecnologias li::before {
+    display: none;
+}
+
+.links-projeto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.links-projeto a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--cor-destaque);
+    background: var(--gradiente-principal);
+    transition: background 0.2s, color 0.2s;
+}
+
+.links-projeto a::before {
+    content: "↗ ";
+}
+
+.links-projeto a:hover {
+    background: #0a0a0f;
+    color: var(--cor-destaque);
+}
