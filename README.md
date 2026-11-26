@@ -19,7 +19,7 @@
 
 ## 📚 Sobre o projeto
 
-Portfólio construído desde a **Unidade 1** da disciplina de **Desenvolvimento de Aplicações Web I**, usando apenas HTML, CSS e JavaScript puros. Reúne minha formação, meus conhecimentos e os projetos que desenvolvi nos cursos de Redes de Computadores, Informática e Análise e Desenvolvimento de Sistemas.
+Portfólio desenvolvido durante a disciplina de **Desenvolvimento de Aplicações Web I**, utilizando apenas HTML, CSS e JavaScript puros. Reúne minha formação, meus conhecimentos e os projetos que desenvolvi nos cursos de Redes de Computadores, Informática e Análise e Desenvolvimento de Sistemas.
 
 O visual é inspirado em uma **janela de terminal**, com fonte monoespaçada (Fira Code) e paleta em tons de **roxo**.
 
