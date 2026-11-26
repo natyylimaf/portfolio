@@ -419,3 +419,11 @@ footer p::before {
     background: #0a0a0f;
     color: var(--cor-destaque);
 }
+
+
+/* ===== Respeita quem pediu menos animações ===== */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    header h1::after,
+    .digitado::after { animation: none; }
+}
